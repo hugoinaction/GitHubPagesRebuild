@@ -14,8 +14,7 @@
     return module.exports;
   };
   var __exportStar = (target, module, desc) => {
-    __markAsModule(target);
-    if (typeof module === "object" || typeof module === "function") {
+    if (module && typeof module === "object" || typeof module === "function") {
       for (let key of __getOwnPropNames(module))
         if (!__hasOwnProp.call(target, key) && key !== "default")
           __defProp(target, key, {get: () => module[key], enumerable: !(desc = __getOwnPropDesc(module, key)) || desc.enumerable});
@@ -25,7 +24,7 @@
   var __toModule = (module) => {
     if (module && module.__esModule)
       return module;
-    return __exportStar(__defProp(__create(__getProtoOf(module)), "default", {value: module, enumerable: true}), module);
+    return __exportStar(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", {value: module, enumerable: true})), module);
   };
 
   // node_modules/@easylogic/editor/dist/editor.js
@@ -50864,6 +50863,6 @@
     });
   });
 
-  // editor.js
-  const Editor = __toModule(require_editor());
+  // <stdin>
+  var Editor = __toModule(require_editor());
 })();
