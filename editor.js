@@ -7,18 +7,18 @@
   var __hasOwnProp = Object.prototype.hasOwnProperty;
   var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
   var __commonJS = (cb, mod) => function __require() {
-    return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
   };
-  var __reExport = (target, module, desc) => {
+  var __reExport = (target, module, copyDefault, desc) => {
     if (module && typeof module === "object" || typeof module === "function") {
       for (let key of __getOwnPropNames(module))
-        if (!__hasOwnProp.call(target, key) && key !== "default")
+        if (!__hasOwnProp.call(target, key) && (copyDefault || key !== "default"))
           __defProp(target, key, { get: () => module[key], enumerable: !(desc = __getOwnPropDesc(module, key)) || desc.enumerable });
     }
     return target;
   };
-  var __toModule = (module) => {
-    return __reExport(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", module && module.__esModule && "default" in module ? { get: () => module.default, enumerable: true } : { value: module, enumerable: true })), module);
+  var __toESM = (module, isNodeMode) => {
+    return __reExport(__markAsModule(__defProp(module != null ? __create(__getProtoOf(module)) : {}, "default", !isNodeMode && module && module.__esModule ? { get: () => module.default, enumerable: true } : { value: module, enumerable: true })), module);
   };
 
   // node_modules/@easylogic/editor/dist/editor.js
@@ -747,7 +747,7 @@
             return Q;
           });
           var r, i = n(12), a = n.n(i), o = n(40), c = n.n(o), s = n(7), u = n.n(s), l = n(15), f = n.n(l), h = n(85), p = n.n(h), d = n(44), v = n(27);
-          new WeakMap();
+          /* @__PURE__ */ new WeakMap();
           function y2(t2) {
             var e2 = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {}, n2 = t2.__proto__, r2 = [];
             do {
@@ -4620,7 +4620,7 @@
           var _e = function() {
             function t2(e2) {
               var n2 = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 3;
-              s()(this, t2), this.editor = e2, this.map = new Map(), this.snapTargetLayers = [], this.snapDistance = n2;
+              s()(this, t2), this.editor = e2, this.map = /* @__PURE__ */ new Map(), this.snapTargetLayers = [], this.snapDistance = n2;
             }
             return l()(t2, [{ key: "dist", get: function() {
               return this.editor.config.get("snap.distance") || this.snapDistance;
@@ -4704,7 +4704,7 @@
             } }]), t2;
           }(), Ue = function() {
             function t2(e2) {
-              s()(this, t2), this.editor = e2, this.codeSet = new Set(), this.keyCodeSet = new Set();
+              s()(this, t2), this.editor = e2, this.codeSet = /* @__PURE__ */ new Set(), this.keyCodeSet = /* @__PURE__ */ new Set();
             }
             return l()(t2, [{ key: "add", value: function(t3, e2) {
               this.codeSet.has(t3) === false && this.codeSet.add(t3), this.keyCodeSet.has(e2) === false && this.keyCodeSet.add(e2);
@@ -5560,7 +5560,7 @@
           n.d(e, "a", function() {
             return E;
           });
-          var r = n(12), i = n.n(r), a = n(15), o = n.n(a), c = n(7), s = n.n(c), u = n(3), l = n.n(u), f = n(4), h = n.n(f), p = n(5), d = n.n(p), v = n(6), y2 = n.n(v), g = n(1), m = n.n(g), b = n(2), k = n(30), O = n(8), x2 = n(9), j = n(14), S = new Map(), P = function() {
+          var r = n(12), i = n.n(r), a = n(15), o = n.n(a), c = n(7), s = n.n(c), u = n(3), l = n.n(u), f = n(4), h = n.n(f), p = n(5), d = n.n(p), v = n(6), y2 = n.n(v), g = n(1), m = n.n(g), b = n(2), k = n(30), O = n(8), x2 = n(9), j = n(14), S = /* @__PURE__ */ new Map(), P = function() {
             function t2() {
               l()(this, t2);
             }
@@ -8078,7 +8078,7 @@
           n.d(e, "a", function() {
             return $;
           });
-          var r = n(12), i = n.n(r), a = n(7), o = n.n(a), c = n(3), s = n.n(c), u = n(4), l = n.n(u), f = n(10), h = n.n(f), p = n(5), d = n.n(p), v = n(6), y2 = n.n(v), g = n(1), m = n.n(g), b = n(2), k = n(30), O = n(25), x2 = n(34), j = n(8), S = new Map(), P = function() {
+          var r = n(12), i = n.n(r), a = n(7), o = n.n(a), c = n(3), s = n.n(c), u = n(4), l = n.n(u), f = n(10), h = n.n(f), p = n(5), d = n.n(p), v = n(6), y2 = n.n(v), g = n(1), m = n.n(g), b = n(2), k = n(30), O = n(25), x2 = n(34), j = n(8), S = /* @__PURE__ */ new Map(), P = function() {
             function t2() {
               s()(this, t2);
             }
@@ -8463,7 +8463,7 @@
           n.d(e, "a", function() {
             return h;
           });
-          var r = n(12), i = n.n(r), a = n(3), o = n.n(a), c = n(4), s = n.n(c), u = n(2), l = new Map(), f = function() {
+          var r = n(12), i = n.n(r), a = n(3), o = n.n(a), c = n(4), s = n.n(c), u = n(2), l = /* @__PURE__ */ new Map(), f = function() {
             function t2() {
               o()(this, t2);
             }
@@ -10704,7 +10704,7 @@
               return s()(this, n2), e2.apply(this, arguments);
             }
             return l()(n2, [{ key: "createIndexItemMap", value: function() {
-              return this.indexedMap || (this.indexedMap = new Map()), this.indexedMap;
+              return this.indexedMap || (this.indexedMap = /* @__PURE__ */ new Map()), this.indexedMap;
             } }, { key: "indexed", get: function() {
               return this.createIndexItemMap(), this.indexedMap;
             } }, { key: "removeIndexItem", value: function(t3) {
@@ -11711,7 +11711,7 @@
               } while (r2 = $());
               return t3;
             }(V(t2), e2));
-          }, J = new WeakMap(), Q = function(t2) {
+          }, J = /* @__PURE__ */ new WeakMap(), Q = function(t2) {
             if (t2.type === "rule" && t2.parent && t2.length) {
               for (var e2 = t2.value, n2 = t2.parent, r2 = t2.column === n2.column && t2.line === n2.line; n2.type !== "rule"; )
                 if (!(n2 = n2.parent))
@@ -12339,7 +12339,7 @@
             var e2 = j(n2);
             function n2(t3) {
               var r2, i2 = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : {};
-              return s()(this, n2), (r2 = e2.call(this, t3, i2)).__UID = new Set(), r2.created(), r2.initialize(), r2.initializeStoreEvent(), r2;
+              return s()(this, n2), (r2 = e2.call(this, t3, i2)).__UID = /* @__PURE__ */ new Set(), r2.created(), r2.initialize(), r2.initializeStoreEvent(), r2;
             }
             return l()(n2, [{ key: "created", value: function() {
             } }, { key: "getRealEventName", value: function(t3) {
@@ -13568,7 +13568,7 @@
           });
           var r = n(3), i = n.n(r), a = n(4), o = n.n(a), c = function() {
             function t2(e2) {
-              i()(this, t2), this.editor = e2, this.configList = [], this.config = new Map();
+              i()(this, t2), this.editor = e2, this.configList = [], this.config = /* @__PURE__ */ new Map();
             }
             return o()(t2, [{ key: "get", value: function(t3) {
               var e2;
@@ -14045,7 +14045,7 @@
           }
           var W = x2.a.create("div"), Z = "[".concat("ref", "]"), q = "[".concat("refclass", "]"), J = (F = { constructor: true, initState: true, updateData: true }, m()(F, "constructor", true), m()(F, "initializeProperty", true), m()(F, "created", true), m()(F, "getRealEventName", true), m()(F, "initializeStoreEvent", true), m()(F, "destoryStoreEvent", true), m()(F, "destroy", true), m()(F, "emit", true), m()(F, "trigger", true), m()(F, "on", true), m()(F, "off", true), m()(F, "setState", true), m()(F, "_reload", true), m()(F, "render", true), m()(F, "initialize", true), m()(F, "afterRender", true), m()(F, "components", true), m()(F, "getRef", true), m()(F, "parseTemplate", true), m()(F, "parseProperty", true), m()(F, "parseSourceName", true), m()(F, "parseComponent", true), m()(F, "clean", true), m()(F, "refresh", true), m()(F, "load", true), m()(F, "bindData", true), m()(F, "template", true), m()(F, "eachChildren", true), m()(F, "destroy", true), m()(F, "collectProps", true), m()(F, "filterProps", true), m()(F, "self", true), m()(F, "isAltKey", true), m()(F, "isCtrlKey", true), m()(F, "isShiftKey", true), m()(F, "isMetaKey", true), m()(F, "preventDefault", true), m()(F, "stopPropagation", true), m()(F, "bodyMouseMove", true), m()(F, "bodyMouseUp", true), F), Q = function() {
             function t2(e3, n2) {
-              d()(this, t2), this.state = {}, this.prevState = {}, this.refs = {}, this.children = {}, this._bindings = [], this.id = Object(P.uuid)(), this.__tempVariables = new Map(), this.handlers = this.initializeHandler(), this.initializeProperty(e3, n2), this.initComponents();
+              d()(this, t2), this.state = {}, this.prevState = {}, this.refs = {}, this.children = {}, this._bindings = [], this.id = Object(P.uuid)(), this.__tempVariables = /* @__PURE__ */ new Map(), this.handlers = this.initializeHandler(), this.initializeProperty(e3, n2), this.initComponents();
             }
             var e2;
             return y2()(t2, [{ key: "initializeProperty", value: function(t3) {
@@ -15007,7 +15007,7 @@
             } }, { key: "getPlugins", value: function() {
               return [];
             } }, { key: "__initBodyMoves", value: function() {
-              this.__moves = new Set(), this.__ends = new Set(), this.__modifyBodyMoveSecond(0);
+              this.__moves = /* @__PURE__ */ new Set(), this.__ends = /* @__PURE__ */ new Set(), this.__modifyBodyMoveSecond(0);
             } }, { key: "__modifyBodyMoveSecond", value: function() {
               var t3 = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : 0;
               this.$config.set("body.move.ms", t3);
@@ -36300,7 +36300,7 @@
               return l()(this, n2);
             };
           }
-          var P = new Set();
+          var P = /* @__PURE__ */ new Set();
           x2.a.forEach(function(t2) {
             P.add(t2.category);
           });
@@ -37888,7 +37888,7 @@
   });
 
   // <stdin>
-  var import_editor = __toModule(require_editor());
+  var import_editor = __toESM(require_editor());
   var app = new import_editor.default.createDesignEditor({
     container: document.getElementById("app")
   });
